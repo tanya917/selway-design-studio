@@ -1,0 +1,110 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Baskerville', 'Palatino', 'Georgia', serif;
+  background-color: #f2ede4;
+  color: #2b2a28;
+  line-height: 1.8;
+  font-weight: 400;
+  font-size: 18px;
+  overflow-x: hidden;
+}
+
+
+/* Hide scrollbar */
+::-webkit-scrollbar {
+  display: none;
+}
+
+html {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+/* Utility classes */
+.container-selway {
+  @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+}
+
+.container-full {
+  @apply w-full px-4 sm:px-6 lg:px-8;
+}
+
+.heading-1 {
+  @apply text-3xl sm:text-4xl lg:text-5xl font-bold text-selway-ink uppercase;
+  font-family: 'Open Sans', 'Poppins', sans-serif;
+}
+
+.heading-2 {
+  @apply text-2xl sm:text-3xl lg:text-4xl font-semibold text-selway-ink uppercase;
+  font-family: 'Open Sans', 'Poppins', sans-serif;
+}
+
+.heading-3 {
+  @apply text-xl sm:text-2xl lg:text-3xl font-semibold text-selway-ink uppercase;
+  font-family: 'Open Sans', 'Poppins', sans-serif;
+}
+
+.heading-section {
+  @apply text-lg sm:text-xl font-semibold text-selway-ink uppercase;
+  font-family: 'Open Sans', 'Poppins', sans-serif;
+  font-size: 1.125em;
+}
+
+.body-text {
+  @apply text-base sm:text-lg text-selway-ink;
+}
+
+.body-small {
+  @apply text-sm sm:text-base text-selway-ink;
+}
+
+/* Link hover effects */
+a {
+  @apply transition-colors duration-300;
+}
+
+a:hover {
+  @apply text-accent-blue;
+}
+
+/* Button styles */
+.btn-primary {
+  @apply px-6 py-3 bg-selway-ink text-white font-semibold rounded transition-colors duration-300 hover:bg-accent-rubis;
+}
+
+.btn-secondary {
+  @apply px-6 py-3 border-2 border-selway-ink text-selway-ink font-semibold rounded transition-colors duration-300 hover:bg-selway-ink hover:text-white;
+}
+
+.btn-tertiary {
+  @apply px-6 py-3 bg-accent-rubis text-white font-semibold rounded transition-colors duration-300 hover:bg-selway-ink;
+}
+
+/* Image optimization */
+img {
+  @apply w-full h-auto;
+}
+
+/* Selection */
+::selection {
+  @apply bg-accent-rubis text-white;
+}
+
+::-moz-selection {
+  @apply bg-accent-rubis text-white;
+}

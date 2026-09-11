@@ -1,0 +1,91 @@
+<x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c128 79.159124, 2016/03/18-14:01:55        ">
+ <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+  <rdf:Description rdf:about=""
+    xmlns:xmp="http://ns.adobe.com/xap/1.0/"
+    xmlns:tiff="http://ns.adobe.com/tiff/1.0/"
+    xmlns:exif="http://ns.adobe.com/exif/1.0/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:aux="http://ns.adobe.com/exif/1.0/aux/"
+    xmlns:photoshop="http://ns.adobe.com/photoshop/1.0/"
+    xmlns:xmpMM="http://ns.adobe.com/xap/1.0/mm/"
+    xmlns:stEvt="http://ns.adobe.com/xap/1.0/sType/ResourceEvent#"
+    xmlns:crs="http://ns.adobe.com/camera-raw-settings/1.0/"
+   xmp:Rating="1"
+   xmp:ModifyDate="2021-01-17T13:29:51+00:00"
+   xmp:CreateDate="2021-01-12T16:24:08.00"
+   xmp:CreatorTool="Adobe Photoshop Lightroom 6.8 (Macintosh)"
+   xmp:MetadataDate="2021-01-17T13:35:20Z"
+   tiff:Make="Canon"
+   tiff:Model="Canon EOS 5D Mark III"
+   tiff:Orientation="8"
+   tiff:ImageWidth="5760"
+   tiff:ImageLength="3840"
+   exif:ExifVersion="0230"
+   exif:ExposureTime="1/100"
+   exif:ShutterSpeedValue="6643856/1000000"
+   exif:FNumber="18/10"
+   exif:ApertureValue="1695994/1000000"
+   exif:ExposureProgram="1"
+   exif:SensitivityType="2"
+   exif:RecommendedExposureIndex="400"
+   exif:ExposureBiasValue="0/1"
+   exif:MaxApertureValue="1625/1000"
+   exif:MeteringMode="3"
+   exif:FocalLength="35/1"
+   exif:CustomRendered="0"
+   exif:ExposureMode="1"
+   exif:WhiteBalance="0"
+   exif:SceneCaptureType="0"
+   exif:FocalPlaneXResolution="52428800/32768"
+   exif:FocalPlaneYResolution="52428800/32768"
+   exif:FocalPlaneResolutionUnit="3"
+   exif:DateTimeOriginal="2021-01-12T16:24:08.00"
+   exif:PixelXDimension="5760"
+   exif:PixelYDimension="3840"
+   dc:format="image/x-canon-cr2"
+   aux:SerialNumber="253020002305"
+   aux:LensInfo="18/1 35/1 0/0 0/0"
+   aux:Lens="18-35mm"
+   aux:LensID="150"
+   aux:LensSerialNumber="0000000000"
+   aux:ImageNumber="0"
+   aux:ApproximateFocusDistance="130/100"
+   aux:FlashCompensation="0/1"
+   aux:OwnerName="John N T Davison"
+   aux:Firmware="1.2.3"
+   photoshop:DateCreated="2021-01-12T16:24:08.00"
+   photoshop:SidecarForExtension="CR2"
+   photoshop:EmbeddedXMPDigest="AD0ACF660F79AC49FD004B2DD3BC0461"
+   xmpMM:DocumentID="4700B67E8D97A1798855FFD478A6E02C"
+   xmpMM:OriginalDocumentID="4700B67E8D97A1798855FFD478A6E02C"
+   xmpMM:InstanceID="xmp.iid:7bc5bb4c-eb16-43ab-b9ff-f536db86ea79"
+   crs:RawFileName="6E5A1746.CR2">
+   <exif:ISOSpeedRatings>
+    <rdf:Seq>
+     <rdf:li>400</rdf:li>
+    </rdf:Seq>
+   </exif:ISOSpeedRatings>
+   <exif:Flash
+    exif:Fired="False"
+    exif:Return="0"
+    exif:Mode="2"
+    exif:Function="False"
+    exif:RedEyeMode="False"/>
+   <dc:creator>
+    <rdf:Seq>
+     <rdf:li>John N T Davison</rdf:li>
+    </rdf:Seq>
+   </dc:creator>
+   <xmpMM:History>
+    <rdf:Seq>
+     <rdf:li
+      stEvt:action="saved"
+      stEvt:instanceID="xmp.iid:7bc5bb4c-eb16-43ab-b9ff-f536db86ea79"
+      stEvt:when="2021-01-17T13:35:20Z"
+      stEvt:softwareAgent="Adobe Photoshop Lightroom 6.8 (Macintosh)"
+      stEvt:changed="/metadata"/>
+    </rdf:Seq>
+   </xmpMM:History>
+  </rdf:Description>
+ </rdf:RDF>
+</x:xmpmeta>
