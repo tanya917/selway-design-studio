@@ -1,5 +1,6 @@
 'use client'
 
+import { Suspense } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
 import projectsConfig from '@/projects.config.json'
@@ -10,7 +11,9 @@ export default function Portfolio() {
 
   return (
     <>
-      <ProjectScroller />
+      <Suspense fallback={null}>
+        <ProjectScroller />
+      </Suspense>
       {/* Hero Section */}
       <section className="bg-selway-cream py-0">
         <div className="container-full">
