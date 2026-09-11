@@ -1,29 +1,16 @@
 'use client'
 
-import { useEffect } from 'react'
-import { useSearchParams } from 'next/navigation'
 import Link from 'next/link'
 import Image from 'next/image'
 import projectsConfig from '@/projects.config.json'
+import { ProjectScroller } from './ProjectScroller'
 
 export default function Portfolio() {
   const projects = projectsConfig.projects
-  const searchParams = useSearchParams()
-
-  useEffect(() => {
-    const scrollTo = searchParams.get('scroll')
-    if (scrollTo) {
-      setTimeout(() => {
-        const element = document.getElementById(`project-${scrollTo}`)
-        if (element) {
-          element.scrollIntoView({ behavior: 'smooth', block: 'center' })
-        }
-      }, 1000)
-    }
-  }, [searchParams])
 
   return (
     <>
+      <ProjectScroller />
       {/* Hero Section */}
       <section className="bg-selway-cream py-0">
         <div className="container-full">
