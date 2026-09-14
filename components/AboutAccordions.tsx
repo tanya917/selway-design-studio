@@ -94,7 +94,7 @@ export default function AboutAccordions() {
                   <h3 className="text-sm uppercase tracking-widest font-semibold mb-2">04</h3>
                   <div className="relative w-64 h-20 mb-4">
                     <Image
-                      src="/hand_drawn_assets/our_services/bespoke_joinery_furniture_design.png"
+                      src="/hand_drawn_assets/our_services/files2/bespoke_joinery_furniture_design.png"
                       alt="Bespoke Joinery and Furniture Design"
                       fill
                       className="object-contain"
@@ -109,7 +109,7 @@ export default function AboutAccordions() {
                   <h3 className="text-sm uppercase tracking-widest font-semibold mb-2">05</h3>
                   <div className="relative w-64 h-20 mb-4">
                     <Image
-                      src="/hand_drawn_assets/our_services/project_coordination_installation.png"
+                      src="/hand_drawn_assets/our_services/files2/project_coordination_installation.png"
                       alt="Project Coordination and Installation"
                       fill
                       className="object-contain"
@@ -121,9 +121,10 @@ export default function AboutAccordions() {
                 </div>
 
                 <div className="border-l-4 border-selway-stone pl-6">
+                  <h3 className="text-sm uppercase tracking-widest font-semibold mb-2">06</h3>
                   <div className="relative w-64 h-20 mb-4">
                     <Image
-                      src="/hand_drawn_assets/our_services/complete_turnkey_service.png"
+                      src="/hand_drawn_assets/our_services/files2/complete_turnkey_service.png"
                       alt="A Complete, turnkey service"
                       fill
                       className="object-contain"
