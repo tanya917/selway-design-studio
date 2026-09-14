@@ -123,7 +123,7 @@ export default function About() {
                   Her practice is informed by a breadth of cultural references - film, art, and the rich colour palettes of her transatlantic European, Middle Eastern and African roots - and a precise, emotional sensitivity to her surroundings.
                 </p>
                 <p>
-                  Sustainability runs through her approach too, sourcing locally wherever a project allows, while holding onto the global outlook that a decade of transatlantic work has given her. With roots in South Africa, Tanya is a native of London, England, where she lives with her husband and two daughters.
+                  Sustainability runs through her approach too, sourcing locally wherever a project allows, while holding onto the global outlook that a decade of transatlantic work has given her. Tanya is a native of London, England, where she lives with her husband and two daughters.
                 </p>
               </div>
             </div>
