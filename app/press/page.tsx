@@ -38,7 +38,7 @@ const pressItems: PressItem[] = [
   },
   {
     file: '2026.07.07_PRINT-Financial Times_Bedroom Bath.pdf',
-    publication: 'Financial Times (Print)',
+    publication: 'Financial Times',
     date: '2026.07.07',
     title: 'Bedroom Bath'
   },
@@ -142,7 +142,7 @@ export default function Press() {
       />
 
       {/* Hero Section */}
-      <section className="border-b-2 border-accent-rubis bg-selway-cream py-16 sm:py-24">
+      <section className="border-b-2 border-accent-rubis bg-selway-cream py-28 sm:py-24">
         <div className="container-full">
         </div>
       </section>

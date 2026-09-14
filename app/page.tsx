@@ -69,10 +69,10 @@ export default async function Home() {
                   Our approach is to create beautifully considered, personalised and emotionally intuitive spaces for private clients, residential projects, hospitality and commercial partners alike.
                 </p>
                 <p className="body-text text-lg leading-relaxed text-selway-stone">
-                  We believe a space can shape how you feel. Your sense of ease, of possibility, of belonging exactly where you are. We work across functionality, material selection, lighting and architectural details to bring that to life. Our role is to read what resonates with each client and translate that into a scheme that carries their story, which is why no two Selway Design Studio projects are ever the same.
+                  We believe a space can shape how you feel. Your sense of ease, of possibility, of belonging exactly where you are. We work across functionality, material selection, lighting and architectural details to bring that feeling to life. Our role is to read what resonates with each client and translate that into a scheme that carries their story, which is why no two Selway Design Studio projects are ever the same.
                 </p>
                 <p className="body-text text-lg leading-relaxed text-selway-stone">
-                  Featured in top publications including <a href="https://www.ft.com/content/230dee97-eaeb-4be3-8001-c6143dd061d6" target="_blank" rel="noopener noreferrer" className="text-accent-blue hover:text-accent-rubis transition-colors">Financial Times</a>, <a href="https://www.houseandgarden.co.uk/article/anatomy-of-a-room-a-playful-rendition-of-a-contemporary-kitchen-by-stelly-selway" target="_blank" rel="noopener noreferrer" className="text-accent-blue hover:text-accent-rubis transition-colors">House and Garden</a> and <a href="https://www.architecturaldigest.com/story/creative-couples-texas-craftsman-stelly-selway" target="_blank" rel="noopener noreferrer" className="text-accent-blue hover:text-accent-rubis transition-colors">Architectural Digest</a> we bring detailed attention to every project.
+                  Featured in top publications including <a href="https://www.ft.com/content/230dee97-eaeb-4be3-8001-c6143dd061d6" target="_blank" rel="noopener noreferrer" className="text-accent-blue hover:text-accent-rubis transition-colors">Financial Times</a>, <a href="https://www.houseandgarden.co.uk/article/anatomy-of-a-room-a-playful-rendition-of-a-contemporary-kitchen-by-stelly-selway" target="_blank" rel="noopener noreferrer" className="text-accent-blue hover:text-accent-rubis transition-colors">House and Garden</a> and <a href="https://www.architecturaldigest.com/story/creative-couples-texas-craftsman-stelly-selway" target="_blank" rel="noopener noreferrer" className="text-accent-blue hover:text-accent-rubis transition-colors">Architectural Digest</a>, we bring detailed attention to every project.
                 </p>
               </div>
               <Link href="/contact" className="btn-primary">
@@ -120,13 +120,13 @@ export default async function Home() {
                   Upper Mall
                 </h2>
                 <p className="body-text text-base text-selway-stone mb-8 leading-relaxed">
-                  A Victorian townhouse interior design and architecture project on Upper Mall, West London, overlooking the River Thames.
+                  A Victorian townhouse interior design and interior architecture project on Upper Mall, West London, overlooking the River Thames.
                 </p>
                 <p className="body-text text-base text-selway-stone mb-8 leading-relaxed">
-                  This full gut renovation added a new basement, loft and rear extension, transforming the property into a refined family home rooted in craftsmanship and a strong sense of place. The brief spanned a bespoke kitchen, four bathrooms, four reception rooms and five bedrooms, with Selway Design Studio, in collaboration with Benjamin Stelly, establishing a cohesive interior language across the entire house. Softly limewashed walls on the ground floor combine with natural materials and custom joinery to create warmth and atmosphere, drawing on the changing light and landscape of the river beyond. Bespoke elements define the project: custom George Smith sofas, shōji-style sliding doors crafted in timber and hemp linen wrapping the basement and primary suite, custom stone vanities in the bathrooms, and sculptural lighting from Aerin, Bocci and Volker Haug.
+                  This full gut renovation included a new basement, loft and rear extension, transforming the property into a refined family home rooted in craftsmanship and a strong sense of place. Selway Design Studio designed a bespoke kitchen, four bathrooms, four reception rooms and five bedrooms establishing a cohesive interior language across the entire house. Softly limewashed walls on the ground floor combine with natural materials and custom joinery, creating warmth and atmosphere, drawing on the changing light and landscape of the river beyond. Bespoke elements define the project, including a custom George Smith sofas, shōji-style sliding doors crafted in timber and hemp linen wrap the basement and primary bedroom walls, custom stone vanities in the bathrooms and sculptural lighting from Aerin, Bocci and Volker Haug.
                 </p>
                 <p className="body-text text-base text-selway-stone mb-8 leading-relaxed">
-                  As featured in Design Anthology
+                  As featured in <a href="https://designanthologyuk.com/article/london-townhouse-stelly-selway/" target="_blank" rel="noopener noreferrer" className="text-accent-blue hover:text-accent-rubis transition-colors">Design Anthology</a>
                 </p>
                 <Link href="/projects/upper-mall" className="btn-primary">
                   View project
@@ -157,7 +157,7 @@ export default async function Home() {
                   Every project starts the same way: with listening. Before a single material is chosen, we take the time to understand a client's instincts, the rhythms of how they live, and the character of the space itself, so that spatial planning, material selection, lighting and bespoke joinery all grow from one coherent idea.
                 </p>
                 <p className="body-text text-lg leading-relaxed text-selway-stone">
-                  Our Process is grounded with transparency, integrity and honesty, with clients and with the makers and collaborators who work alongside us. That discipline is what earns a studio the freedom to be genuinely creative, and it carries through from the first conversation to the final installation, so nothing about the work flow ever feels like a mystery.
+                  Our Process is grounded in transparency, integrity and honesty, with clients and with the makers and collaborators who work alongside us. That discipline is what earns a studio the freedom to be genuinely creative, and it carries through from the first conversation to the final installation, so nothing about the workflow ever feels like a mystery.
                 </p>
                 <p className="body-text text-lg leading-relaxed text-selway-stone">
                   Our ambition isn't simply to design a beautiful room. It's to create a space that feels more like itself with each year that passes, one that holds a family's story, enriches an experience, responds to its setting, and quietly makes everyday life more beautiful.
@@ -181,6 +181,7 @@ export default async function Home() {
           </div>
         </div>
       </section>
+
     </>
   )
 }

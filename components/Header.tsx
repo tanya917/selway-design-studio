@@ -2,7 +2,7 @@ import Link from 'next/link'
 
 export default function Header() {
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 pt-6 pl-2">
+    <header className="fixed top-0 left-0 right-0 z-50 pt-6 pl-2 pb-6">
       <div>
         {/* Floating Logo */}
         <Link href="/" className="w-fit hover:opacity-80 transition-opacity">

@@ -29,7 +29,7 @@ export default function HeroCarousel({ images }: HeroCarouselProps) {
 
   if (images.length === 0) {
     return (
-      <div className="relative w-full h-96 sm:h-screen bg-selway-cream flex items-center justify-center">
+      <div className="relative w-full h-screen bg-selway-cream flex items-center justify-center">
         <p className="text-selway-stone text-lg">Hero carousel coming soon</p>
       </div>
     )
@@ -39,7 +39,7 @@ export default function HeroCarousel({ images }: HeroCarouselProps) {
 
   return (
     <div
-      className="relative w-full h-96 sm:h-screen overflow-hidden"
+      className="relative w-full h-screen overflow-hidden"
       onMouseEnter={() => setIsAutoPlay(false)}
       onMouseLeave={() => setIsAutoPlay(true)}
     >

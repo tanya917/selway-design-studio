@@ -16,7 +16,7 @@ export default function About() {
   return (
     <>
       {/* Hero Section */}
-      <section className="border-b-2 border-accent-rubis bg-accent-rubis py-16 sm:py-24" style={{ borderBottom: '4px solid #B7C7D1' }}>
+      <section className="border-b-2 border-accent-rubis bg-accent-rubis py-28 sm:py-24" style={{ borderBottom: '4px solid #B7C7D1' }}>
         <div className="container-full">
         </div>
       </section>
@@ -51,19 +51,16 @@ export default function About() {
               </div>
               <div className="space-y-5 text-base leading-relaxed">
                 <p>
-                  Selway Design Studio is an award-winning interior design studio led by Tanya Selway, based in the UK and working regularly abroad across the US and Europe. We take on a small number of projects at any one time, to ensure close collaboration and constant communication with all clients and teams on a project.
-                </p>
-                <p className="text-sm text-selway-stone italic">
-                  Selway Design Studio is the evolution of Stelly Selway, the interior design practice founded by Tanya Selway over a decade ago in Los Angeles before transitioning back to London.
+                  Selway Design Studio is an award-winning interior design studio led by Tanya Selway, based in the UK and working regularly abroad across the US and Europe. We take on a small number of projects at any one time to ensure close collaboration and constant communication with all clients and teams on a project.
                 </p>
                 <p>
-                  We design hyper-personalised interiors for private clients, developers and hospitality brands, managed from first concept through to completion. Every project takes its own shape from its architecture, its client and its setting, but each carries the same instinct for material depth, considered detail and a strong sense of place.
+                  We design hyper-personalised interiors for private clients, developers and hospitality brands, managing every project from first concept through to completion. Every project takes its own shape from its architecture, its client and its setting, but each carries the same instinct for material depth, considered detail and a strong sense of place.
                 </p>
                 <p>
-                  Weaving worldliness and a kaleidoscope of cultural references into every design decision. We're as drawn to the uncommon details as we are to the overarching concept: an unexpected upholstery, a sculptural object that catches the eye without trying to, a material choice that surprises before it settles. Much of what fills a room is collected and commissioned rather than bought off the shelf. Textiles, joinery, furniture and individual pieces made with the craftspeople and vendors we trust, with lifelong collections sitting alongside bold new discoveries, so a finished space never feels furnished in one sitting.
+                  Weaving worldliness and a kaleidoscope of cultural references into every design decision, we're as drawn to the uncommon details as we are to the overarching concept: an unexpected upholstery, a sculptural object that catches the eye, a material choice that surprises before it settles. Much of what fills a room is collected and commissioned rather than bought off the shelf. Textiles, joinery, furniture and individual pieces made with the craftspeople and vendors we trust, sit alongside lifelong collections and bold new discoveries, so a finished space never feels furnished in one sitting.
                 </p>
                 <p>
-                  A global network of vendors, makers and collaborators in London, Los Angeles and beyond, enables us to realise custom design strategies with people whose work carries its own story, craft and narrative.
+                  A global network of vendors, makers and collaborators in London, Los Angeles and beyond enables us to realise custom design strategies with people whose work carries its own provenance, craft and story.
                 </p>
                 <p>
                   A deep understanding of material and architectural behaviour grants us unique insight into crafting interiors that are intuitive, artful and shaped to endure.
@@ -117,10 +114,16 @@ export default function About() {
                   Tanya Selway is the founder and principal of Selway Design Studio, the evolution of a decade-long design practice that began in Los Angeles before transitioning back to London, the city where she was born.
                 </p>
                 <p>
-                  Tanya's multicultural, artistic London upbringing runs through the ambitious creativity she brings to interior design. Raised in a creative household, her father an art director and painter, in a home that was constantly evolving, she grew up with a natural fascination for play, experimentation and the unexpected, a through-line she still brings to every project today, whether that's introducing a new artist, an unusual accessory, or a material that feels just a little surprising.
+                  Tanya's multicultural, artistic London upbringing runs through the ambitious creativity she brings to interior design. Raised in a creative household -  her father an art director and painter -  in a home that was constantly evolving. She grew up with a natural fascination for play, experimentation and the unexpected, a through-line she still brings to every project today, whether that's introducing a new artist, an unusual accessory, or a material that feels just a little surprising.
                 </p>
                 <p>
-                  Trained as a fine art painter, Tanya works as an artist and designer all at once, bringing a keen understanding of colour, texture and materiality to every space she designs. She's informed by a kaleidoscope of cultural references, film, art and the rich colour palettes of her transatlantic European, Middle Eastern and African roots, and a precise, emotional sensitivity to her surroundings. Sustainability runs through her approach too, sourcing locally wherever a project allows, while holding onto the global outlook that a decade of transatlantic work has given her. With roots in South Africa, Tanya is a native of London, England, where she lives with her husband and two daughters.
+                  Trained as a fine art painter, Tanya works as an artist and designer all at once, bringing a keen understanding of colour, texture and materiality to every space she designs.
+                </p>
+                <p>
+                  Her practice is informed by a breadth of cultural references - film, art, and the rich colour palettes of her transatlantic European, Middle Eastern and African roots - and a precise, emotional sensitivity to her surroundings.
+                </p>
+                <p>
+                  Sustainability runs through her approach too, sourcing locally wherever a project allows, while holding onto the global outlook that a decade of transatlantic work has given her. With roots in South Africa, Tanya is a native of London, England, where she lives with her husband and two daughters.
                 </p>
               </div>
             </div>
@@ -141,7 +144,9 @@ export default function About() {
       </section>
 
       {/* Crawling Slug Animation */}
-      <CrawlingSlug />
+      <section className="w-full bg-selway-cream py-0">
+        <CrawlingSlug />
+      </section>
     </>
   )
 }

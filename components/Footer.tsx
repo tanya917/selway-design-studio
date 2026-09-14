@@ -1,7 +1,12 @@
+'use client'
+
 import Link from 'next/link'
 import Image from 'next/image'
+import { usePathname } from 'next/navigation'
 
 export default function Footer() {
+  const pathname = usePathname()
+  const showSlugAttribution = pathname === '/about'
   return (
     <footer className="border-t-2 border-accent-blue bg-accent-rubis text-white">
       <div className="container-full py-6">
@@ -39,6 +44,19 @@ export default function Footer() {
 
           {/* Contact */}
           <div>
+            {showSlugAttribution && (
+              <p className="text-xs text-gray-400 mb-1 leading-tight">
+                Disco Slug by{' '}
+                <a
+                  href="https://anneliefawke.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-accent-blue transition-colors"
+                >
+                  Annelie Fawke
+                </a>
+              </p>
+            )}
             <h4 className="font-semibold mb-4">Contact</h4>
             <div className="space-y-3">
               <a href="mailto:info@selwaydesignstudio.com" className="inline-block hover:opacity-75 transition-opacity">

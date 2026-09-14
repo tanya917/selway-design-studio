@@ -3,7 +3,7 @@ import Image from 'next/image'
 
 export default function CrawlingSlug() {
   return (
-    <section style={{ padding: 0, margin: 0 }}>
+    <section style={{ padding: 0, margin: 0, background: 'transparent', width: '100%' }}>
       <style>{`
         .slug-stage {
           position: relative;

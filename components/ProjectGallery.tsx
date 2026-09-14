@@ -21,18 +21,20 @@ export default function ProjectGallery({ images, projectTitle }: { images: strin
     }))
   }
 
-  return (
-    <section className="p-0 m-0 bg-black" style={{ width: '100vw', marginLeft: 'calc(50% - 50vw)' }}>
-      <div className="flex flex-wrap gap-0" style={{ width: '100vw' }}>
-        {images.slice(1).map((image: string, idx: number) => {
-          const realIdx = idx + 1
-          const dimensions = imageDimensions[realIdx]
-          const isPortrait = dimensions?.isPortrait ?? false
-          const aspectRatio = dimensions?.aspectRatio ?? 1
-          const widthClass = isPortrait ? 'w-1/2' : 'w-full'
+  // Group images by type for mobile layout
+  const processedImages = images.slice(1).map((image, idx) => ({
+    image,
+    idx: idx + 1
+  }))
 
-          // Fixed height matching projects page
-          const heightValue = isPortrait ? '100vh' : '100vh'
+  return (
+    <section className="p-0 m-0" style={{ width: '100vw', marginLeft: 'calc(50% - 50vw)' }}>
+      {/* Desktop layout - original */}
+      <div className="hidden lg:flex flex-wrap gap-0" style={{ width: '100vw', backgroundColor: 'black' }}>
+        {processedImages.map((item, idx) => {
+          const dimensions = imageDimensions[item.idx]
+          const isPortrait = dimensions?.isPortrait ?? false
+          const widthClass = isPortrait ? 'w-1/2' : 'w-full'
 
           return (
             <div
@@ -40,12 +42,34 @@ export default function ProjectGallery({ images, projectTitle }: { images: strin
               className={`${widthClass} h-screen relative overflow-hidden bg-black flex-shrink-0`}
             >
               <Image
-                src={`/${image}`}
-                alt={`${projectTitle} - Image ${idx + 2}`}
+                src={`/${item.image}`}
+                alt={`${projectTitle} - Image ${item.idx}`}
                 fill
                 sizes={isPortrait ? '50vw' : '100vw'}
                 className="object-cover"
-                onLoadingComplete={(result) => handleImageLoad(realIdx, result)}
+                onLoadingComplete={(result) => handleImageLoad(item.idx, result)}
+              />
+            </div>
+          )
+        })}
+      </div>
+
+      {/* Mobile layout - new stacking */}
+      <div className="lg:hidden grid gap-0 w-full bg-white" style={{ gridTemplateColumns: '1fr' }}>
+        {processedImages.map((item, idx) => {
+          const dimensions = imageDimensions[item.idx]
+          const isPortrait = dimensions?.isPortrait ?? false
+
+          // All images display full-width, one per row on mobile
+          return (
+            <div key={idx} className="relative w-full h-auto bg-white">
+              <Image
+                src={`/${item.image}`}
+                alt={`${projectTitle} - Image ${item.idx}`}
+                width={isPortrait ? 300 : 375}
+                height={isPortrait ? 450 : 250}
+                className="w-full h-auto object-contain"
+                onLoadingComplete={(result) => handleImageLoad(item.idx, result)}
               />
             </div>
           )
