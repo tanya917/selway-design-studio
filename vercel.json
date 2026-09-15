@@ -13,17 +13,6 @@
       ],
       "destination": "https://selwaydesignstudio.com/:path*",
       "permanent": true
-    },
-    {
-      "source": "/:path*",
-      "has": [
-        {
-          "type": "protocol",
-          "value": "http"
-        }
-      ],
-      "destination": "https://:host/:path*",
-      "permanent": true
     }
   ],
   "headers": [
