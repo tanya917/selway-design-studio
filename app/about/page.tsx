@@ -66,7 +66,7 @@ export default function About() {
                 </p>
               </div>
             </div>
-            <div className="relative w-full overflow-hidden rounded-lg" style={{ minHeight: '700px' }}>
+            <div className="relative w-full overflow-hidden rounded-lg" style={{ minHeight: 'clamp(300px, 50vh, 700px)' }}>
               <img
                 src="/Images%20for%20About%20page/Patagonia_Table_Watercolor_Rendering_cutout.png"
                 alt="Patagonia table watercolor rendering"
@@ -81,7 +81,7 @@ export default function About() {
       <section className="bg-selway-cream py-0">
         <div className="container-full">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 items-start">
-            <div className="flex justify-center mt-40">
+            <div className="flex justify-center mt-8 lg:mt-40">
               <div className="relative overflow-hidden" style={{ width: '512px', height: '512px' }}>
                 <Image
                   src="/portraits_tanya/2021 John Davison/Tanya Selway - John Davison - Color.png"
