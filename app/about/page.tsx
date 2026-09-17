@@ -22,14 +22,13 @@ export default function About() {
       </section>
 
       {/* Architectural Elevations */}
-      <section className="bg-selway-cream py-16 sm:py-24">
+      <section className="bg-selway-cream py-8 sm:py-12">
         <div className="container-full">
-          <div className="relative w-full h-80 overflow-hidden rounded-lg">
-            <Image
+          <div className="w-full">
+            <img
               src="/sketches/sketch-about_page-bathroom.png"
               alt="Architectural bathroom elevations and floor plans"
-              fill
-              className="object-cover"
+              className="w-full h-auto"
             />
           </div>
         </div>
@@ -67,23 +66,19 @@ export default function About() {
                 </p>
               </div>
             </div>
-            <div className="mt-28">
-              <div className="relative w-full h-auto overflow-hidden rounded-lg">
-                <Image
-                  src="/sketches/sketck-about_page-curved_wall.png"
-                  alt="Curved wall design sketch"
-                  width={500}
-                  height={600}
-                  className="w-full h-auto object-contain"
-                />
-              </div>
+            <div className="relative w-full overflow-hidden rounded-lg" style={{ minHeight: '700px' }}>
+              <img
+                src="/Images%20for%20About%20page/Patagonia_Table_Watercolor_Rendering_cutout.png"
+                alt="Patagonia table watercolor rendering"
+                className="w-full h-full object-cover"
+              />
             </div>
           </div>
         </div>
       </section>
 
       {/* Tanya's Bio */}
-      <section className="bg-selway-cream py-3 sm:py-4">
+      <section className="bg-selway-cream py-0">
         <div className="container-full">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 items-start">
             <div className="flex justify-center mt-40">
