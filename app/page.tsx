@@ -26,8 +26,17 @@ export const metadata: Metadata = {
   ],
   openGraph: {
     type: 'website',
+    url: 'https://www.selwaydesignstudio.com',
     title: 'Award-Winning Interior Design Studio | Selway Design Studio',
     description: 'Selway Design Studio (formerly Stelly Selway) creates hyper-personalised, beautifully considered interiors for private clients, residential projects, hospitality and commercial partners across London, Los Angeles and worldwide.',
+    images: [
+      {
+        url: 'https://www.selwaydesignstudio.com/carousel_pics/Selway-Jessica-Alexander-Whitehall-Road-London-Primary-Bedroom-3.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'Selway Design Studio - Award-winning interior design',
+      },
+    ],
   },
 }
 
@@ -51,6 +60,41 @@ export default async function Home() {
 
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'LocalBusiness',
+            name: 'Selway Design Studio',
+            alternateName: 'Stelly Selway',
+            description: 'Award-winning interior design studio creating hyper-personalised spaces',
+            url: 'https://www.selwaydesignstudio.com',
+            telephone: 'info@selwaydesignstudio.com',
+            email: 'info@selwaydesignstudio.com',
+            address: {
+              '@type': 'PostalAddress',
+              streetAddress: 'Bramber Court, 2 Bramber Road',
+              addressLocality: 'London',
+              addressRegion: 'England',
+              postalCode: 'W14 9PW',
+              addressCountry: 'GB',
+            },
+            image: 'https://www.selwaydesignstudio.com/carousel_pics/Selway-Jessica-Alexander-Whitehall-Road-London-Primary-Bedroom-3.jpg',
+            sameAs: [
+              'https://www.instagram.com/selway.design.studio/',
+              'https://www.linkedin.com/in/tanya-selway-a4a11019/',
+              'https://uk.pinterest.com/selwaydesignstudio/',
+            ],
+            founder: {
+              '@type': 'Person',
+              name: 'Tanya Selway',
+            },
+            areaServed: ['London', 'Los Angeles', 'Austin', 'UK', 'US'],
+            serviceType: ['Interior Design', 'Residential Design', 'Hospitality Design'],
+          }),
+        }}
+      />
       {/* Hero Carousel - Full Screen */}
       <HeroCarousel images={heroImages} />
 
