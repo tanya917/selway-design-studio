@@ -87,7 +87,7 @@ export default function Footer() {
           <div className="flex flex-col md:flex-row justify-between items-center text-sm text-gray-400">
             <p>&copy; {new Date().getFullYear()} Selway Design Studio. All rights reserved.</p>
             <div className="flex gap-5 mt-2 md:mt-0">
-              <a href="https://www.instagram.com/tanya.selway/" target="_blank" rel="noopener noreferrer" className="hover:opacity-75 transition-opacity" title="Instagram">
+              <a href="https://www.instagram.com/selway.design.studio/" target="_blank" rel="noopener noreferrer" className="hover:opacity-75 transition-opacity" title="Instagram">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                   <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
                   <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
