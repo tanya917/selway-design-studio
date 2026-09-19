@@ -6,7 +6,7 @@ import { getHeroImages, getProjects } from '@/lib/sanity'
 
 export const metadata: Metadata = {
   title: 'Award-Winning Interior Design Studio | Selway Design Studio',
-  description: 'Selway Design Studio (formerly Stelly Selway) creates hyper-personalised, beautifully considered spaces for private clients, residential projects, hospitality and commercial partners across London, Los Angeles and worldwide.',
+  description: 'Selway Design Studio creates hyper-personalised, beautifully considered spaces for private clients, residential projects, hospitality and commercial partners across London, Los Angeles and worldwide.',
   keywords: [
     'interior design',
     'interior design studio',
@@ -67,7 +67,6 @@ export default async function Home() {
             '@context': 'https://schema.org',
             '@type': 'LocalBusiness',
             name: 'Selway Design Studio',
-            alternateName: 'Stelly Selway',
             description: 'Award-winning interior design studio creating hyper-personalised spaces',
             url: 'https://www.selwaydesignstudio.com',
             telephone: 'info@selwaydesignstudio.com',
