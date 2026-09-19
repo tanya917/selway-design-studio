@@ -15,6 +15,42 @@ export const metadata: Metadata = genMeta(
 export default function About() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'Person',
+            name: 'Tanya Selway',
+            url: 'https://www.selwaydesignstudio.com',
+            jobTitle: 'Founder & Principal',
+            affiliation: {
+              '@type': 'Organization',
+              name: 'Selway Design Studio',
+              url: 'https://www.selwaydesignstudio.com',
+            },
+            sameAs: [
+              'https://www.instagram.com/selway.design.studio/',
+              'https://www.linkedin.com/in/tanya-selway-a4a11019/',
+              'https://uk.pinterest.com/selwaydesignstudio/',
+            ],
+            description: 'Tanya Selway is the founder and principal of Selway Design Studio, an award-winning interior design practice. She leads the studio in creating hyper-personalised spaces across London, Los Angeles, and worldwide.',
+            knowsAbout: ['Interior Design', 'Residential Design', 'Hospitality Design', 'Architecture'],
+            workLocation: [
+              {
+                '@type': 'City',
+                name: 'London',
+                '@id': 'https://en.wikipedia.org/wiki/London'
+              },
+              {
+                '@type': 'City',
+                name: 'Los Angeles',
+                '@id': 'https://en.wikipedia.org/wiki/Los_Angeles'
+              }
+            ]
+          }),
+        }}
+      />
       {/* Hero Section */}
       <section className="border-b-2 border-accent-rubis bg-accent-rubis py-28 sm:py-24" style={{ borderBottom: '4px solid #B7C7D1' }}>
         <div className="container-full">

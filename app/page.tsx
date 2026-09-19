@@ -67,7 +67,7 @@ export default async function Home() {
             '@context': 'https://schema.org',
             '@type': 'LocalBusiness',
             name: 'Selway Design Studio',
-            description: 'Award-winning interior design studio creating hyper-personalised spaces',
+            description: 'Selway Design Studio is an award-winning, full-service interior design studio led by principal Tanya Selway. The studio creates hyper-personalised, beautifully considered spaces for private clients, residential projects, hospitality and commercial partners across London, Los Angeles and worldwide.',
             url: 'https://www.selwaydesignstudio.com',
             telephone: 'info@selwaydesignstudio.com',
             email: 'info@selwaydesignstudio.com',
@@ -88,6 +88,13 @@ export default async function Home() {
             founder: {
               '@type': 'Person',
               name: 'Tanya Selway',
+              url: 'https://www.selwaydesignstudio.com/about',
+              jobTitle: 'Founder & Principal',
+            },
+            leader: {
+              '@type': 'Person',
+              name: 'Tanya Selway',
+              jobTitle: 'Principal',
             },
             areaServed: ['London', 'Los Angeles', 'Austin', 'UK', 'US'],
             serviceType: ['Interior Design', 'Residential Design', 'Hospitality Design'],
