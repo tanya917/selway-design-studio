@@ -51,6 +51,49 @@ export default function About() {
           }),
         }}
       />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'FAQPage',
+            mainEntity: [
+              {
+                '@type': 'Question',
+                name: 'What is the relationship between Stelly Selway and Selway Design Studio?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Selway Design Studio is the evolution of Stelly Selway, an interior design practice led by principal Tanya Selway. Tanya Selway, who was formerly principal of Stelly Selway, now leads Selway Design Studio, continuing the same award-winning design practice under the new name.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Is Selway Design Studio related to Stelly Selway?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Yes. Selway Design Studio is the current operating name of the design practice previously known as Stelly Selway. The studio is led by Tanya Selway and maintains the same commitment to creating hyper-personalised, beautifully considered interior design across London, Los Angeles, and worldwide.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Who is Tanya Selway and what is Stelly Selway?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Tanya Selway is the founder and principal of Selway Design Studio. She was formerly the principal of Stelly Selway, an award-winning interior design practice. She continues to lead the same design practice, now operating as Selway Design Studio, creating bespoke interior design for private clients, residential projects, hospitality and commercial partners.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Is Stelly Selway still operating?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Stelly Selway has evolved into Selway Design Studio, which is the current name of the design practice led by principal Tanya Selway. All services and projects continue under the Selway Design Studio name.',
+                },
+              },
+            ],
+          }),
+        }}
+      />
       {/* Hero Section */}
       <section className="border-b-2 border-accent-rubis bg-accent-rubis py-28 sm:py-24" style={{ borderBottom: '4px solid #B7C7D1' }}>
         <div className="container-full">
