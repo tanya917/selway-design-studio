@@ -30,9 +30,28 @@ export async function generateMetadata({
   const description = firstParagraph
     ? `${firstParagraph.charAt(0).toUpperCase()}${firstParagraph.slice(1)} by Selway Design Studio.`
     : `${project.title} — an interior design project by Selway Design Studio.`
+
+  const projectImageUrl = project.image
+    ? `https://www.selwaydesignstudio.com/${project.image}`
+    : 'https://www.selwaydesignstudio.com/carousel_pics/Selway-Jessica-Alexander-Whitehall-Road-London-Primary-Bedroom-3.jpg'
+
   return {
     title: `${project.title} | Selway Design Studio`,
     description,
+    openGraph: {
+      type: 'website',
+      url: `https://www.selwaydesignstudio.com/projects/${project.slug}`,
+      title: `${project.title} — Interior Design Project`,
+      description,
+      images: [
+        {
+          url: projectImageUrl,
+          width: 1200,
+          height: 630,
+          alt: project.title,
+        },
+      ],
+    },
   }
 }
 
@@ -66,6 +85,55 @@ export default function ProjectPage({
 
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'CreativeWork',
+            name: project.title,
+            description: project.description?.split('\n\n')[0] || project.title,
+            url: `https://www.selwaydesignstudio.com/projects/${project.slug}`,
+            image: project.image ? `https://www.selwaydesignstudio.com/${project.image}` : undefined,
+            creator: {
+              '@type': 'Organization',
+              name: 'Selway Design Studio',
+              url: 'https://www.selwaydesignstudio.com',
+            },
+            about: 'Interior Design',
+            inLanguage: 'en-GB',
+          }),
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'BreadcrumbList',
+            itemListElement: [
+              {
+                '@type': 'ListItem',
+                position: 1,
+                name: 'Home',
+                item: 'https://www.selwaydesignstudio.com',
+              },
+              {
+                '@type': 'ListItem',
+                position: 2,
+                name: 'Projects',
+                item: 'https://www.selwaydesignstudio.com/projects',
+              },
+              {
+                '@type': 'ListItem',
+                position: 3,
+                name: project.title,
+                item: `https://www.selwaydesignstudio.com/projects/${project.slug}`,
+              },
+            ],
+          }),
+        }}
+      />
       {/* Back Button - Hidden when footer is visible */}
       <BackButton projectSlug={project.slug} />
 

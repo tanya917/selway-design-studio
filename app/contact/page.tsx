@@ -1,9 +1,61 @@
 import Image from 'next/image'
+import { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'Contact Us | Selway Design Studio',
+  description: 'Get in touch with Selway Design Studio. Contact us for project enquiries, press, or general information about our interior design services in London and Los Angeles.',
+  openGraph: {
+    type: 'website',
+    url: 'https://www.selwaydesignstudio.com/contact',
+    title: 'Contact Selway Design Studio | Interior Design Enquiries',
+    description: 'Contact Selway Design Studio for interior design projects, press enquiries, and general information. London and Los Angeles based.',
+    images: [
+      {
+        url: 'https://www.selwaydesignstudio.com/carousel_pics/Selway-Jessica-Alexander-Whitehall-Road-London-Primary-Bedroom-3.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'Selway Design Studio',
+      },
+    ],
+  },
+}
 
 export default function Contact() {
 
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'LocalBusiness',
+            name: 'Selway Design Studio',
+            url: 'https://www.selwaydesignstudio.com',
+            contactPoint: [
+              {
+                '@type': 'ContactPoint',
+                contactType: 'Project Enquiries',
+                telephone: 'info@selwaydesignstudio.com',
+                email: 'info@selwaydesignstudio.com',
+              },
+              {
+                '@type': 'ContactPoint',
+                contactType: 'Press Enquiries',
+                email: 'press@selwaydesignstudio.com',
+              },
+            ],
+            address: {
+              '@type': 'PostalAddress',
+              streetAddress: 'Bramber Court, 2 Bramber Road',
+              addressLocality: 'London',
+              addressRegion: 'England',
+              postalCode: 'W14 9PW',
+              addressCountry: 'GB',
+            },
+          }),
+        }}
+      />
       {/* Hero Section */}
       <section className="border-b-2 border-accent-rubis bg-selway-cream py-28 sm:py-24">
         <div className="container-full">

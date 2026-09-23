@@ -5,12 +5,28 @@ import { generateMetadata as genMeta } from '@/lib/seo'
 import CrawlingSlug from '@/components/CrawlingSlug'
 import AboutAccordions from '@/components/AboutAccordions'
 
-export const metadata: Metadata = genMeta(
-  'About',
-  'Selway Design Studio is an award-winning interior design studio led by Tanya Selway, working across London, Los Angeles and worldwide. Meet the studio, our values and our design process.',
-  undefined,
-  '/about'
-)
+export const metadata: Metadata = {
+  ...genMeta(
+    'About',
+    'Selway Design Studio is an award-winning interior design studio led by Tanya Selway, working across London, Los Angeles and worldwide. Meet the studio, our values and our design process.',
+    undefined,
+    '/about'
+  ),
+  openGraph: {
+    type: 'website',
+    url: 'https://www.selwaydesignstudio.com/about',
+    title: 'About Selway Design Studio | Tanya Selway',
+    description: 'Meet Selway Design Studio, an award-winning interior design studio led by principal Tanya Selway. Learn about our values, process, and approach to creating beautifully considered spaces.',
+    images: [
+      {
+        url: 'https://www.selwaydesignstudio.com/carousel_pics/Selway-Jessica-Alexander-Whitehall-Road-London-Primary-Bedroom-3.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'Selway Design Studio - About',
+      },
+    ],
+  },
+}
 
 export default function About() {
   return (

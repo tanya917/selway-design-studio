@@ -9,8 +9,17 @@ export const metadata: Metadata = {
   keywords: ['press', 'media', 'news', 'interior design', 'Tanya Selway', 'design press', 'interior design coverage', 'architecture press', 'design media', 'Financial Times', 'House & Garden', 'Architectural Digest'],
   openGraph: {
     type: 'website',
+    url: 'https://www.selwaydesignstudio.com/press',
     title: 'Press & Media | Selway Design Studio',
     description: 'Press coverage and media features of Selway Design Studio and Tanya Selway. Featured in Financial Times, Architectural Digest, House & Garden, and more.',
+    images: [
+      {
+        url: 'https://www.selwaydesignstudio.com/carousel_pics/Selway-Jessica-Alexander-Whitehall-Road-London-Primary-Bedroom-3.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'Selway Design Studio - Press Coverage',
+      },
+    ],
   },
 }
 
