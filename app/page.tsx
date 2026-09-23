@@ -65,7 +65,7 @@ export default async function Home() {
         dangerouslySetInnerHTML={{
           __html: JSON.stringify({
             '@context': 'https://schema.org',
-            '@type': 'LocalBusiness',
+            '@type': 'ProfessionalService',
             name: 'Selway Design Studio',
             description: 'Selway Design Studio is an award-winning, full-service interior design studio led by principal Tanya Selway. The studio creates hyper-personalised, beautifully considered spaces for private clients, residential projects, hospitality and commercial partners across London, Los Angeles and worldwide.',
             url: 'https://www.selwaydesignstudio.com',
@@ -96,8 +96,27 @@ export default async function Home() {
               name: 'Tanya Selway',
               jobTitle: 'Principal',
             },
-            areaServed: ['London', 'Los Angeles', 'Austin', 'UK', 'US'],
-            serviceType: ['Interior Design', 'Residential Design', 'Hospitality Design'],
+            areaServed: ['London', 'Los Angeles', 'Austin', 'UK', 'US', 'West London'],
+            serviceType: [
+              'Residential Interior Design',
+              'Luxury Interior Design',
+              'Hospitality Design',
+              'Commercial Interior Design',
+              'Bespoke Interior Design',
+              'Family Home Interior Design',
+              'New Build Interior Design',
+              'Warm Interiors',
+              'High End Interiors',
+              'Quirky Interior Design',
+              'Colourful Interior Design',
+              'Mid Century Interior Design',
+              'Personalised Interior Design',
+              'Thoughtful Interior Design',
+              'Wood Panelling Design',
+              'Maximalist Interior Design',
+              'Cool Interior Design',
+              'Beautiful Interior Design',
+            ],
           }),
         }}
       />
