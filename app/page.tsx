@@ -46,14 +46,14 @@ export default async function Home() {
   const featuredProject = projects.length > 0 ? projects[0] : null
 
   const carouselImages = [
-    { _id: 'carousel-1', image: { asset: { url: '/carousel_pics/selway_design_studio-jessica_alexander-jersey_road-29.jpg' } } },
-    { _id: 'carousel-2', image: { asset: { url: '/carousel_pics/Selway-Austin-Leis-44-East-Living-Room-5.jpg' } } },
-    { _id: 'carousel-3', image: { asset: { url: '/carousel_pics/Selway-Jessica-Alexander-Cervantes-Place-Los-Angeles-Living-Room-0.jpg' } } },
-    { _id: 'carousel-4', image: { asset: { url: '/carousel_pics/Selway-Jessica-Alexander-Whitehall-Road-London-Primary-Bedroom-3.jpg' } } },
-    { _id: 'carousel-5', image: { asset: { url: '/carousel_pics/Selway-Jessica-Alexander-Whitehall-Road-London-Primary-Bedroom-17.jpg' } } },
-    { _id: 'carousel-6', image: { asset: { url: '/carousel_pics/Selway-Lindsay-Brown-W36-Austin-LoRes-7.jpg' } } },
-    { _id: 'carousel-7', image: { asset: { url: '/carousel_pics/Selway-Lindsay-Brown-W36-Austin-LoRes-17_B.jpg' } } },
-    { _id: 'carousel-8', image: { asset: { url: '/carousel_pics/Selway-Simon-Brown-Upper-Mall-London-Web-80.jpg' } } },
+    { _id: 'carousel-1', image: { asset: { url: '/carousel_pics/selway_design_studio-jessica_alexander-jersey_road-29.jpg' } }, alt: 'Jersey Road kitchen with custom cherry joinery, leather-fronted cabinets and marble countertops' },
+    { _id: 'carousel-2', image: { asset: { url: '/carousel_pics/Selway-Austin-Leis-44-East-Living-Room-5.jpg' } }, alt: '44 East Austin living room with warm interiors and considered material selection' },
+    { _id: 'carousel-3', image: { asset: { url: '/carousel_pics/Selway-Jessica-Alexander-Cervantes-Place-Los-Angeles-Living-Room-0.jpg' } }, alt: 'Cervantes Place Los Angeles living room with luxury interior design and bespoke furnishings' },
+    { _id: 'carousel-4', image: { asset: { url: '/carousel_pics/Selway-Jessica-Alexander-Whitehall-Road-London-Primary-Bedroom-3.jpg' } }, alt: 'Whitehall Road London primary bedroom with custom joinery and soft furnishings' },
+    { _id: 'carousel-5', image: { asset: { url: '/carousel_pics/Selway-Jessica-Alexander-Whitehall-Road-London-Primary-Bedroom-17.jpg' } }, alt: 'Whitehall Road London bedroom detail with natural materials and considered design' },
+    { _id: 'carousel-6', image: { asset: { url: '/carousel_pics/Selway-Lindsay-Brown-W36-Austin-LoRes-7.jpg' } }, alt: 'W36 Austin residence with warm interiors and bespoke interior design elements' },
+    { _id: 'carousel-7', image: { asset: { url: '/carousel_pics/Selway-Lindsay-Brown-W36-Austin-LoRes-17_B.jpg' } }, alt: 'W36 Austin living space showcasing luxury interior design and material depth' },
+    { _id: 'carousel-8', image: { asset: { url: '/carousel_pics/Selway-Simon-Brown-Upper-Mall-London-Web-80.jpg' } }, alt: 'Upper Mall London interior design project featuring limewashed walls and natural materials' },
   ]
 
   const heroImages = [...carouselImages, ...sanityImages]

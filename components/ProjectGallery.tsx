@@ -21,6 +21,22 @@ export default function ProjectGallery({ images, projectTitle }: { images: strin
     }))
   }
 
+  // Generate descriptive alt text from image filename
+  const getAltText = (imagePath: string) => {
+    const filename = imagePath.split('/').pop() || ''
+    const filenameWithoutExt = filename.replace(/\.[^/.]+$/, '')
+
+    // Extract readable parts from filename (e.g., "upper_mall_kitchen" -> "Upper Mall Kitchen")
+    const parts = filenameWithoutExt
+      .split('-')
+      .slice(-1)[0] // Get last part after hyphen
+      .split('_')
+      .map(word => word.charAt(0).toUpperCase() + word.slice(1))
+      .join(' ')
+
+    return `${projectTitle} - ${parts} interior design detail`
+  }
+
   // Group images by type for mobile layout
   const processedImages = images.slice(1).map((image, idx) => ({
     image,
@@ -43,7 +59,7 @@ export default function ProjectGallery({ images, projectTitle }: { images: strin
             >
               <Image
                 src={`/${item.image}`}
-                alt={`${projectTitle} - Image ${item.idx}`}
+                alt={getAltText(item.image)}
                 fill
                 sizes={isPortrait ? '50vw' : '100vw'}
                 className="object-cover"
@@ -65,7 +81,7 @@ export default function ProjectGallery({ images, projectTitle }: { images: strin
             <div key={idx} className="relative w-full h-auto bg-white">
               <Image
                 src={`/${item.image}`}
-                alt={`${projectTitle} - Image ${item.idx}`}
+                alt={getAltText(item.image)}
                 width={isPortrait ? 300 : 375}
                 height={isPortrait ? 450 : 250}
                 className="w-full h-auto object-contain"
