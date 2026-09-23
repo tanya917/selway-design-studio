@@ -11,6 +11,12 @@ export const metadata: Metadata = {
   alternates: {
     canonical: 'https://selwaydesignstudio.com',
   },
+  robots: {
+    index: true,
+    follow: true,
+    nocache: false,
+    googleBot: 'index, follow',
+  },
 }
 
 export default function RootLayout({
