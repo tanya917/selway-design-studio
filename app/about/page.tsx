@@ -179,7 +179,7 @@ export default function About() {
             <div className="flex justify-center mt-2 lg:mt-40">
               <div className="relative overflow-hidden" style={{ width: '512px', height: '512px' }}>
                 <Image
-                  src="/portraits_tanya/2024 Tanya UK /Tanya Selway Portrait.jpg"
+                  src="/portraits_tanya/2024%20Tanya%20UK%20/Tanya%20Selway%20Portrait.jpg"
                   alt="Tanya Selway"
                   fill
                   className="object-cover"
