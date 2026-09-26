@@ -176,7 +176,7 @@ export default function About() {
       <section className="bg-selway-cream py-0">
         <div className="container-full">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 items-start">
-            <div className="flex justify-center mt-2 lg:mt-48">
+            <div className="flex justify-center mt-2 lg:mt-36">
               <div className="relative overflow-hidden" style={{ width: '560px', height: '560px' }}>
                 <Image
                   src="/portraits_tanya/tanya-portrait-2024.jpg"
@@ -186,9 +186,9 @@ export default function About() {
                 />
               </div>
             </div>
-            <div className="space-y-6 lg:-mt-12">
+            <div className="space-y-6">
               <h2 className="sr-only">About Tanya Selway</h2>
-              <div className="relative w-80 h-32 mb-0">
+              <div className="relative w-80 h-32 mb-4">
                 <Image
                   src="/hand_drawn_assets/about_tanya_selway.png"
                   alt="About Tanya Selway"
