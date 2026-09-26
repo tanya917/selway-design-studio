@@ -186,9 +186,9 @@ export default function About() {
                 />
               </div>
             </div>
-            <div className="space-y-6">
+            <div className="space-y-6 lg:-mt-12">
               <h2 className="sr-only">About Tanya Selway</h2>
-              <div className="relative w-80 h-32 mb-4">
+              <div className="relative w-80 h-32 mb-0">
                 <Image
                   src="/hand_drawn_assets/about_tanya_selway.png"
                   alt="About Tanya Selway"
