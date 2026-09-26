@@ -176,8 +176,8 @@ export default function About() {
       <section className="bg-selway-cream py-0">
         <div className="container-full">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 items-start">
-            <div className="flex justify-center mt-2 lg:mt-40">
-              <div className="relative overflow-hidden" style={{ width: '512px', height: '512px' }}>
+            <div className="flex justify-center mt-2 lg:mt-16">
+              <div className="relative overflow-hidden" style={{ width: '560px', height: '560px' }}>
                 <Image
                   src="/portraits_tanya/tanya-portrait-2024.jpg"
                   alt="Tanya Selway"
