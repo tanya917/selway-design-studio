@@ -173,7 +173,7 @@ export default function About() {
       </section>
 
       {/* Tanya's Bio */}
-      <section className="bg-selway-cream py-0 pb-6">
+      <section className="bg-selway-cream py-0 pb-16">
         <div className="container-full">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 items-start">
             <div className="flex justify-center mt-2 lg:mt-36">
