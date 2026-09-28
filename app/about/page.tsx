@@ -130,7 +130,7 @@ export default function About() {
       </section>
 
       {/* Studio Statement */}
-      <section className="bg-selway-cream py-1 sm:py-2">
+      <section className="bg-selway-cream py-0">
         <div className="container-full">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
             <div className="space-y-5">
