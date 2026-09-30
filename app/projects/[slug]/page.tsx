@@ -38,6 +38,9 @@ export async function generateMetadata({
   return {
     title: `${project.title} | Selway Design Studio`,
     description,
+    alternates: {
+      canonical: `https://www.selwaydesignstudio.com/projects/${project.slug}`,
+    },
     openGraph: {
       type: 'website',
       url: `https://www.selwaydesignstudio.com/projects/${project.slug}`,
