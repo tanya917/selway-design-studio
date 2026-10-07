@@ -8,9 +8,6 @@ import './globals.css'
 export const metadata: Metadata = {
   ...genMeta('Award-Winning Interior Design Studio',
     'Selway Design Studio creates hyper-personalised, beautifully considered spaces for private clients, residential projects, hospitality and commercial partners across London, Los Angeles and worldwide.'),
-  alternates: {
-    canonical: 'https://selwaydesignstudio.com',
-  },
   robots: {
     index: true,
     follow: true,
