@@ -17,6 +17,9 @@ export function generateMetadata(
     metadataBase: new URL(baseUrl),
     title: `${title} | ${siteName}`,
     description: pageDescription || description,
+    alternates: {
+      canonical: url,
+    },
     keywords: [
       'interior design',
       'bespoke interiors',

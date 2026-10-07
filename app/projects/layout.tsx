@@ -13,6 +13,9 @@ export const metadata: Metadata = {
     'interior design examples',
     'design work',
   ],
+  alternates: {
+    canonical: 'https://www.selwaydesignstudio.com/projects',
+  },
   openGraph: {
     type: 'website',
     url: 'https://www.selwaydesignstudio.com/projects',

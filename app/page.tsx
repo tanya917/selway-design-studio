@@ -24,6 +24,9 @@ export const metadata: Metadata = {
     'Selway Design Studio',
     'Tanya Selway',
   ],
+  alternates: {
+    canonical: 'https://www.selwaydesignstudio.com',
+  },
   openGraph: {
     type: 'website',
     url: 'https://www.selwaydesignstudio.com',

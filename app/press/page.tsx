@@ -7,6 +7,9 @@ export const metadata: Metadata = {
   title: 'Press & Media | Selway Design Studio - Interior Design Coverage',
   description: 'Press coverage and media features of Selway Design Studio and Tanya Selway. Featured in Financial Times, Architectural Digest, House & Garden, and leading design publications.',
   keywords: ['press', 'media', 'news', 'interior design', 'Tanya Selway', 'design press', 'interior design coverage', 'architecture press', 'design media', 'Financial Times', 'House & Garden', 'Architectural Digest'],
+  alternates: {
+    canonical: 'https://www.selwaydesignstudio.com/press',
+  },
   openGraph: {
     type: 'website',
     url: 'https://www.selwaydesignstudio.com/press',

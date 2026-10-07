@@ -4,6 +4,9 @@ import { Metadata } from 'next'
 export const metadata: Metadata = {
   title: 'Contact Us | Selway Design Studio',
   description: 'Get in touch with Selway Design Studio. Contact us for project enquiries, press, or general information about our interior design services in London and Los Angeles.',
+  alternates: {
+    canonical: 'https://www.selwaydesignstudio.com/contact',
+  },
   openGraph: {
     type: 'website',
     url: 'https://www.selwaydesignstudio.com/contact',
